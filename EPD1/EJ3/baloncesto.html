@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Deportivo - Canchas de Baloncesto</title>
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo - Canchas de Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="padel.html">Pistas de P&aacute;del</a></li>
+                <li><a href="futbol.html">Pistas de F&uacute;tbol</a></li>
+                <li><a href="baloncesto.html">Canchas de Baloncesto</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>En Centro Deportivo, ofrecemos dos tipos de canchas de baloncesto.</p>
+        <section>
+            <h3>Cancha Interior (28x15m)</h3>
+            <p>Cancha interior sobre parquet, ideal para torneos, adecuada a las dimensiones establecidas por la FIBA</p>
+            <figure>
+                <img src="https://i.pinimg.com/originals/08/85/92/08859214236b92c956963172968ee9b0.jpg" alt="Canchas interiores" width="800">
+                <figcaption>Nuestra cancha interior</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Cancha Exterior (26x14m)</h3>
+            <p>Canchas al aire libre de acr&iacute;lico.</p>
+            <figure>
+                <img src="https://www.geoplastglobal.com/images/projects/gripper_polivalente_16.jpg" alt="Canchas exteriores" width="800">
+                <figcaption>Nuestra cancha exterior</figcaption>
+            </figure>
+        </section>
+        <br>
+        <section>
+            <h2>Reservar una cancha</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre...">
+                    <br>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduzca sus apellidos...">
+                    <br>
+                    <label for="dni">DNI: </label>
+                    <input type="text" id="dni" name="dni" placeholder="Introduzca su DNI...">
+                    <br>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Informaci&oacute;n de reserva</legend>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br>
+                    <label for="duracion">Duraci&oacute;n </label>
+                    <select id="duracion" name="duracion">
+                        <option value="30">30</option>
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="150">150</option>
+                    </select> minutos
+                    <br>
+                    <label for="tipo">Tipo de pista: </label>
+                    <input type="radio" id="tipo" name="tipo" value="interior"> Cancha interior
+                    <input type="radio" name="tipo" value="exterior"> Cancha exterior
+                    <br>
+                </fieldset>
+                <label for="confirmacion">Confirma que ha le&iacute;do los t&eacute;rminos y condiciones: </label>
+                <input type="checkbox" id="confirmacion" name="confirmacion">
+                <input type="submit" value="Reservar">
+            </form>
+        </section>
+        <br><br>
+    </main>
+
+    <footer>
+        <p>© 2025 Centro Deportivo</p>
+    </footer>
+</body>
+</html>

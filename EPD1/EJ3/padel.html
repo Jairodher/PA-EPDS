@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Deportivo - Pistas de P&aacute;del</title>
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo - Pistas de P&aacute;del</h1>
+        <nav>
+            <ul>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="padel.html">Pistas de P&aacute;del</a></li>
+                <li><a href="futbol.html">Pistas de F&uacute;tbol</a></li>
+                <li><a href="baloncesto.html">Canchas de Baloncesto</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>En Centro Deportivo, podr&aacute; disfrutar de una gran variedad de pistas de p&aacute;del.</p>
+        <section>
+            <h3>Pistas de C&eacute;sped (20x10m)</h3>
+            <p>Pistas de p&aacute;del al aire libre hechas de c&eacute;sped artificial, usadas para impartir clases.</p>
+            <figure>    
+                <img src="https://www.pistas-padel.es/wp-content/uploads/2021/10/Construccion-pistas-padel-Espana.jpg" alt="Pistas cesped pádel" width="800">
+                <figcaption>Nuestras pistas de c&eacute;sped</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Pistas de Hormig&oacute;n (20x10m)</h3>
+            <p>Pistas exteriores con suelo de hormig&oacute;n, disponibles para alquilar.</p>
+            <figure>
+                <img src="https://pavipor.com/wp-content/uploads/2020/01/Padel_Muro_3.jpg" alt="Pistas hormigón pádel" width="800">
+                <figcaption>Nuestras pistas de hormig&oacute;n</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Pistas de Resina Sint&eacute;tica (20x10m)</h3>
+            <p>Pistas interiores de resina sint&eacute;tica utilizadas para alojar competiciones oficiales.</p>
+            <figure>
+                <img src="https://factoriadesuelos.es/wp-content/uploads/2023/03/fallos-con-la-arena-en-una-pista-de-padel-.jpg" alt="Pistas resina sintética pádel" width="800">
+                <figcaption>Nuestras pistas de resina sint&eacute;tica</figcaption>
+            </figure>
+        </section>
+        <br>
+        <section>
+            <h2>Reservar una pista</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre...">
+                    <br>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduzca sus apellidos...">
+                    <br>
+                    <label for="dni">DNI: </label>
+                    <input type="text" id="dni" name="dni" placeholder="Introduzca su DNI...">
+                    <br>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Informaci&oacute;n de reserva</legend>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br>
+                    <label for="duracion">Duraci&oacute;n </label>
+                    <select id="duracion" name="duracion">
+                        <option value="30">30</option>
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="150">150</option>
+                    </select> minutos
+                    <br>
+                    <label for="tipo">Tipo de pista: </label>
+                    <input type="radio" id="tipo" name="tipo" value="cesped"> C&eacute;sped
+                    <input type="radio" name="tipo" value="hormigon"> Hormig&oacute;n
+                    <input type="radio" name="tipo" value="resina"> Resina Sint&eacute;tica
+                    <br>
+                </fieldset>
+                <label for="confirmacion">Confirma que ha le&iacute;do los t&eacute;rminos y condiciones: </label>
+                <input type="checkbox" id="confirmacion" name="confirmacion">
+                <input type="submit" value="Reservar">
+            </form>
+        </section>
+        <br><br>
+    </main>
+
+    <footer>
+        <p>© 2025 Centro Deportivo</p>
+    </footer>
+</body>
+</html>

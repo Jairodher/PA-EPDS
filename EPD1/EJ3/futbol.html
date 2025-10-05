@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Deportivo - Pistas de F&uacute;tbol</title>
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo - Pistas de F&uacute;tbol</h1>
+        <nav>
+            <ul>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="padel.html">Pistas de P&aacute;del</a></li>
+                <li><a href="futbol.html">Pistas de F&uacute;tbol</a></li>
+                <li><a href="baloncesto.html">Canchas de Baloncesto</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2></h2>
+        <p>En Centro Deportivo, podr&aacute; disfrutar de una gran variedad de pistas de f&uacute;tbol.</p>
+        <section>
+            <h3>F&uacute;tbol 11 (75x110m)</h3>
+            <p>Pistas de c&eacute;sped artificial al aire libre, utilizadas para alojar partidos profesionales y torneos.</p>
+            <figure>
+                <img src="https://es.habcdn.com/files/dynamic_content/dsc-0009-984075-2413027_big.jpg" alt="Pistas fútbol cesped" width="800">
+                <figcaption>Nuestras pistas de c&eacute;sped</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>F&uacute;tbol Sala (25x42m)</h3>
+            <p>Pistas interiores ubicadas en uno de nuestros pabellones, diseñadas para seguir el reglamento del fútbol sala.</p>
+            <figure> 
+                <img src="https://www.shutterstock.com/image-photo/banten-indonesia-august-02-2022-600nw-2455954305.jpg" alt="Pistas fútbol sala" width="800">
+                <figcaption>Nuestras pistas de f&uacute;tbol sala</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>F&uacute;tbol 7 (45x65m)</h3>
+            <p>Pistas exteriores de cesped artificial con las dimensiones adecuadas para jugar al f&uacute;tbol 7.</p>
+            <figure>
+                <img src="https://deportes.osuna.es/wp-content/uploads/2024/09/futbol7.jpg" alt="Pistas fútbol 7" width="800">
+                <figcaption>Nuestras pistas de f&uacute;tbol 7</figcaption>
+            </figure>
+        </section>
+        <br>
+        <section>
+            <h2>Reservar una pista</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre..." required>
+                    <br>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduzca sus apellidos..." required>
+                    <br>
+                    <label for="dni">DNI: </label>
+                    <input type="text" id="dni" name="dni" placeholder="Introduzca su DNI..." required>
+                    <br>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Informaci&oacute;n de reserva</legend>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br>
+                    <label for="duracion">Duraci&oacute;n </label>
+                    <select id="duracion" name="duracion">
+                        <option value="30">30</option>
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="150">150</option>
+                    </select> minutos
+                    <br>
+                    <label for="tipo">Tipo de pista: </label>
+                    <input type="radio" id="tipo" name="tipo" value="futbol11"> F&uacute;tbol 11
+                    <input type="radio" name="tipo" value="futbolsala"> F&uacute;tbol Sala
+                    <input type="radio" name="tipo" value="futbol7"> F&uacute;tbol 7
+                    <br>
+                </fieldset>
+                <label for="confirmacion">Confirma que ha le&iacute;do los t&eacute;rminos y condiciones: </label>
+                <input type="checkbox" id="confirmacion" name="confirmacion">
+                <input type="submit" value="Reservar">
+            </form>
+        </section>
+        <br><br>
+    </main>
+    
+    <footer>
+        <p>© 2025 Centro Deportivo</p>
+    </footer>
+</body>
+</html>
