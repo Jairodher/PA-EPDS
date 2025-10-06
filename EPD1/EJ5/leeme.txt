@@ -1,0 +1,76 @@
+Etiquetas básicas utilizadas en todos los archivos HTML del proyecto:
+
+ - <body>
+
+ - <head>
+
+ - <html>
+
+ - <meta>
+
+ - <title>
+
+
+Las etiquetas utilizadas durante la práctica son las siguientes (se muestran en orden alfabético):
+
+ - <a> ("baloncesto.html", "blog.html", "contacto.html", "equipo.html", "futbol.html", "instalaciones.html", "login.html", "noticia1.html", "noticia2.html", "noticia3.html", "noticias.html", "padel.html", "personal.html"): Añade un enlace al archivo. Utilizada para crear un enlace hacia otra página html del proyecto.
+
+ - <article> ("noticia1.html", "noticia2.html", "noticia3.html"): Contiene un bloque de contenido independiente y reutilizable. Utilizada en las noticias de la práctica.
+
+ - <br> ("equipo.html", "futbol.html", "index.html", "noticia1.html", "noticia2.html", "noticia3.html"): Salto de línea.
+
+ - <footer> ("noticia1.html", "noticia2.html", "noticia3.html"): Añade un pie de página. Utilizada en las noticias de la práctica.
+
+ - <form> ("futbol.html", "index.html", "noticia1.html"): Crea un formulario.
+
+ - <figcaption> ("noticia1.html", "noticia2.html", "noticia3.html"): Añade una descripción a una imagen.
+
+ - <figure> ("noticia1.html", "noticia2.html", "noticia3.html"): Añade una pequeña descripción a una imagen con <figcaption>.
+
+ - <h1> ("baloncesto.html", "blog.html", "contacto.html", "equipo.html", "futbol.html", "index.html", "instalaciones.html", "login.html", "noticia1.html", "noticia2.html", "noticia3.html", "noticias.html", "padel.html", "personal.html"): Utilizado para el título principal.
+
+ - <h2> ("blog.html", "contacto.html", "equipo.html", "futbol.html", "login.html", "noticia1.html", "noticia2.html", "noticia3.html", "noticias.html", "personal.html"): Utilizado para subtítulos.
+
+ - <h3> ("blog.html", "contacto.html", "equipo.html", "futbol.html", "instalaciones.html", "personal.html"): Utilizado para subsecciones dentro de <h2>.
+
+ - <header> ("login.html", "noticia1.html", "noticia2.html", "noticia3.html"): Encabezado de una página.
+
+ - <hr> ("noticia1.html", "noticia2.html", "noticia3.html"): Separa contenido horizontalmente por temática.
+
+ - <img> ("contacto.html", "equipo.html", "index.html", "noticia1.html", "noticia2.html", "noticia3.html"): Agrega una imagen a la página a través de un enlace.
+
+ - <input> ("futbol.html", "index.html", "noticia1.html"): Recoge datos escritos por el usuario.
+
+ - <label> ("futbol.html", "index.html", "noticia1.html"): Crea una etiqueta que debe asociarse con un id.
+
+ - <li> ("baloncesto.html", "blog.html", "contacto.html", "equipo.html", "futbol.html", "instalaciones.html", "login.html", "noticia1.html", "noticia2.html", "noticia3.html", "noticias.html", "padel.html", "personal.html"): Elemento que compone una lista, sea ordenada o no. Utilizada para listar las páginas html a las que podemos movernos desde la página actual.
+
+ - <main> ("login.html"): Engloba el contenido principal de la página.
+
+ - <nav> ("baloncesto.html", "blog.html", "contacto.html", "equipo.html", "futbol.html", "instalaciones.html", "login.html", "noticias.html", "padel.html", "personal.html"): Contiene enlaces de navegación de la página.
+
+ - <ol> ("equipo.html", "noticia2.html", "noticia3.html"): Lista ordenada de elementos.
+
+ - <option> ("futbol.html"): Opciones para el menú desplegable.
+
+ - <p> ("blog.html", "contacto.html", "futbol.html", "index.html", "login.html", "noticia1.html", "noticia2.html", "noticia3.html", "personal.html"): Agrega un párrafo de texto.
+
+ - <section> ("blog.html", "contacto.html", "equipo.html", "futbol.html", "noticia1.html", "noticia2.html", "noticia3.html", "personal.html"): Agrupa contenido relacionado por tema dentro de una página.
+
+ - <select> ("futbol.html"): Crea un menú desplegable con opciones.
+
+ - <strong> ("noticia1.html", "noticia2.html", "noticia3.html"): Convierte a negrita el texto que rodea.
+
+ - <table> ("futbol.html"): Crea una tabla.
+
+ - <tbody> ("futbol.html"): Contiene las filas de datos de una tabla.
+
+ - <td> ("futbol.html"): Celda de dato dentro de una fila.
+
+ - <th> ("futbol.html"): Celda de encabezado dentro de una fila.
+
+ - <thead> ("futbol.html"): Crea las filas de encabezado dentro de una tabla.
+
+ - <tr> ("futbol.html"): Define una fila de una tabla.
+
+ - <ul> ("baloncesto.html", "blog.html", "contacto.html", "equipo.html", "futbol.html", "instalaciones.html", "login.html", "noticia1.html", "noticias.html", "padel.html", "personal.html"): Lista sin orden de elementos. Utilizada para listar las páginas html a las que podemos movernos desde la página actual.
