@@ -11,32 +11,27 @@ body {
 .contenedor {
     background-color:rgb(17, 2, 38);
     display: flex;
-    gap: 5px;
-    margin: 5px;
-
+    gap: 2px;
 }
 
 /* Columna izquierda */
 .columna_izquierda {
     flex: 1;
-    background-color: #dcb6b6;
+    background-color: rgb(146, 203, 211);
     padding: 15px;
-    border-radius: 2px;
 }
 
 /* Columna central */
 .columna_centro {
     flex: 2;
-    background-color: rgb(146, 203, 211);
+    background-color: white;
     padding: 30px;
-    border-radius: 2px;
 }
 
 /* Columna derecha */
 .columna_derecha {
     flex: 1;
-    background-color: #dcb6b6;
+    background-color: rgb(146, 203, 211);
     padding: 15px;
-    border-radius: 2px;
 }
 
