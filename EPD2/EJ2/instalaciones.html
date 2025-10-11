@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instalaciones</title>
+    <link rel="stylesheet" href="diseño_dos_columnas.css">
+    <link rel="stylesheet" href="estilo_general.css">
 </head>
 
 <body>
     <h1>INSTALACIONES</h1>
-    <nav> <!-- Define una seccion de navegacion de la pagina -->
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="personal.html">Personal</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <h3>PISTAS A RESERVAR</h3>
-        <ul>
-            <li><a href="padel.html">Pistas de padel</a></li>
-            <li><a href="futbol.html">Pistas de futbol</a></li>
-            <li><a href="baloncesto.html">Pistas de baloncesto</a></li>
-        </ul>
+    <nav id="contenedor"> 
+        <div id="columna" class = "izquierda">
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div id="columna" class = "derecha">
+            <h2>PISTAS A RESERVAR</h2>
+            <ul>
+                <li><a href="padel.html">Pistas de padel</a></li>
+                <li><a href="futbol.html">Pistas de futbol</a></li>
+                <li><a href="baloncesto.html">Pistas de baloncesto</a></li>
+            </ul>
+        </div>
     </nav>
 </body>
 
