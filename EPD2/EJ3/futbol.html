@@ -4,69 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generalej3.css">
     <title>futbol</title>
 </head>
 
-<body>
-    <h1>PISTAS DE FUTBOL</h1>
-    <section id="tiposDePistas">
-        <h2>Tipos de Pistas</h2>
+<body class="contenedor">
+    <nav class="columna_izquierda">
+        <h3>MENU</h3>
         <ul>
-            <li>
-                <h3>Futbol 7</h3>
-                <p>Dimensiones: 60m x 40m</p>
-                <p>Superficie: Césped artificial</p>
-                <p>Iluminación: Se podrá pedir por la noche</p>
-            </li>
-            <li>
-                <h3>Futbol 11</h3>
-                <p>Dimensiones: 100m x 64m</p>
-                <p>Superficie: Césped artificial</p>
-                <p>Iluminación: Se podrá pedir por la noche</p>
-            </li>
-            <li>
-                <h3>Futbol Sala</h3>
-                <p>Dimensiones: 40m x 20m</p>
-                <p>Superficie: Parqué</p>
-                <p>Iluminación: Durante todo el dia </p>  
-            </li>
+            <li><a href="instalaciones.html">Instalaciones</a></li>
         </ul>
-    </section>
-    <section id="horariosYtarifas">
-        <h2>Horarios y Tarifas</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th rowspan="2">Día</th>
-                    <th colspan="2">Horario</th>
-                    <th rowspan="2">Tarifa (€)</th>
-                </tr>
-                <tr>
-                    <th>Mañana</th>
-                    <th>Tarde</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lunes-Viernes</td>
-                    <td>8:00-14:00</td>
-                    <td>16:00-22:00</td>
-                    <td rowspan="2">20</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td colspan="2">9:00-21:00</td>
-                </tr>
-                <tr>
-                    <td>Domingo</td>
-                    <td colspan="3">Cerrado</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
+    </nav>
+    <article class="columna_centro">
+        <h1>PISTAS DE FUTBOL</h1>
+        <section id="tiposDePistas">
+            <h2>Tipos de Pistas</h2>
+            <ul>
+                <li>
+                    <h3>Futbol 7</h3>
+                    <p>Dimensiones: 60m x 40m</p>
+                    <p>Superficie: Césped artificial</p>
+                    <p>Iluminación: Se podrá pedir por la noche</p>
+                </li>
+                <li>
+                    <h3>Futbol 11</h3>
+                    <p>Dimensiones: 100m x 64m</p>
+                    <p>Superficie: Césped artificial</p>
+                    <p>Iluminación: Se podrá pedir por la noche</p>
+                </li>
+                <li>
+                    <h3>Futbol Sala</h3>
+                    <p>Dimensiones: 40m x 20m</p>
+                    <p>Superficie: Parqué</p>
+                    <p>Iluminación: Durante todo el dia </p>
+                </li>
+            </ul>
+        </section>
+        <section id="horariosYtarifas">
+            <h2>Horarios y Tarifas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Día</th>
+                        <th colspan="2">Horario</th>
+                        <th rowspan="2">Tarifa (€)</th>
+                    </tr>
+                    <tr>
+                        <th>Mañana</th>
+                        <th>Tarde</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes-Viernes</td>
+                        <td>8:00-14:00</td>
+                        <td>16:00-22:00</td>
+                        <td rowspan="2">20</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td colspan="2">9:00-21:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td colspan="3">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
 
-    </section>
+        </section>
         <h2>Reserva de pista</h2>
         <form>
             <label for="nombre">Nombre:</label>
@@ -83,16 +91,12 @@
             </select><br>
             <input type="submit" value="Reservar">
         </form>
+    </article>
 
+    <nav class="columna_derecha">
+        <h3>OTRAS PISTAS</h3>
 
-
-
-
-
-
-    <nav> 
         <ul>
-            <li><a href="instalaciones.html">Instalaciones</a></li>
             <li><a href="padel.html">Pistas de padel</a></li>
             <li><a href="baloncesto.html">Pistas de baloncesto</a></li>
         </ul>

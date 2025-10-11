@@ -1,0 +1,42 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+/* Contenedor principal con 3 columnas */
+.contenedor {
+    background-color:rgb(17, 2, 38);
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+
+}
+
+/* Columna izquierda */
+.columna_izquierda {
+    flex: 1;
+    background-color: #dcb6b6;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+/* Columna central */
+.columna_centro {
+    flex: 2;
+    background-color: rgb(146, 203, 211);
+    padding: 30px;
+    border-radius: 2px;
+}
+
+/* Columna derecha */
+.columna_derecha {
+    flex: 1;
+    background-color: #dcb6b6;
+    padding: 15px;
+    border-radius: 2px;
+}
+
