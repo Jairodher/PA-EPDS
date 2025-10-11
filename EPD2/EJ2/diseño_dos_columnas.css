@@ -1,0 +1,27 @@
+#contenedor {
+    display: flex;
+    gap: 5px;
+    margin: 10px 20px 10px 20px;
+    border: 1px solid #005f73;
+    border-radius: 15px;
+    background-color: azure;
+    align-items: stretch;
+    
+}
+
+#columna {
+    flex: 1 1 300px;
+    padding: 40px;
+    margin: 0px 5px 0px 5px;
+    border: 1px dotted black;
+    text-align: center;
+    min-width: 220px;
+}
+
+#columna.izquierda {
+    border-radius: 15px 50px 50px 15px;
+}
+
+#columna.derecha {
+    border-radius: 50px 15px 15px 50px;
+}
