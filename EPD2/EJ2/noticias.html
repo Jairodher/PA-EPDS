@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>noticias</title>
-    <link rel="stylesheet" href="estilo_general.css">
-    <link rel="stylesheet" href="diseño_dos_columnas.css">
+    <link rel="stylesheet" href="estilo_gen.css">
 </head>
 
 <body>
-    <h1>NOTICIAS</h1>
-    <nav id="contenedor">
-        <div id ="columna" class="izquierda">
+    <header>
+        <h1>NOTICIAS</h1>
+    </header>
+    <div id="contenedor">
+        <nav>
             <h2>MENU</h2>
             <ul>
                 <li><a href="login.html">Login</a></li>
@@ -22,17 +23,23 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </div>
-        <div id ="columna" class ="derecha">
-            <h2>Enlaces hijos</h2>
-            <ul>
-                <li><a href="noticia1.html">Noticia 1</a></li>
-                <li><a href="noticia2.html">Noticia 2</a></li>
-                <li><a href="noticia3.html">Noticia 3</a></li>
-            </ul>
-        </div>
-        </ul>
-    </nav>
+        </nav>
+        <main>
+            <article>
+                <section>
+                    <h2>Enlaces hijos</h2>
+                    <ul>
+                        <li><a href="noticia1.html">Noticia 1</a></li>
+                        <li><a href="noticia2.html">Noticia 2</a></li>
+                        <li><a href="noticia3.html">Noticia 3</a></li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <p>© 2025 Centro Deportivo</p>
+    </footer>
 </body>
 
 </html>
