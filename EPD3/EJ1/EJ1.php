@@ -27,7 +27,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         );
         
         $empleadosDeHoy = rand(3, count($empleados));
-        echo "Hoy tienen que trabajar $empleadosDeHoy empleados.<br>";
         
         $nombres = array_keys($empleados);
         $empleadosQueTrabajaran = array_rand($nombres, $empleadosDeHoy);
