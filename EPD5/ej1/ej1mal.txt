@@ -1,0 +1,19 @@
+LUNES#09:00#10:30#Spinning
+MARTES#25:00#26:00#Yoga
+MIERCOLES#16:00#15:00#Natación
+JUEVES#17:00#18:00#
+VIERNES#10:00-11:30#Spinning
+SABADO#09:00#10:30#Aqua Aeróbicos
+DOMINGO#11:00#12:30#Pilates Avanzado
+LUNES#08:00#09:00#Natación
+MARTES#10:00#11:00#Yoga
+MIERCOLES#14:00#15:00#Tenis
+JUEVES#16:00#17:00#Spinning
+VIERNES#18:00#19:00#Aeróbicos
+SABADO#20:00#21:00#Zumba
+DOMINGO#09:00#10:00#Pilates
+LUNES#11:00#12:00#Natación
+MARTES#09:00#10:30#Spinning avanzado para socios premium con música de alta
+energía y ejercicios de resistencia cardiovascular muy intensos que requieren
+una preparación física excepcional y un nivel de compromiso alto para poder
+participar en esta actividad tan demandante
