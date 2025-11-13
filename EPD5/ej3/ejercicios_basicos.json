@@ -1,0 +1,36 @@
+{
+  "ejercicios": [
+    {
+      "nombre": "Flexiones",
+      "categoria": "Pecho",
+      "tipo_campo": "repeticiones",
+      "min_valor": 5,
+      "max_valor": 50,
+      "descripcion": "Número de repeticiones"
+    },
+    {
+      "nombre": "Sentadillas",
+      "categoria": "Piernas",
+      "tipo_campo": "repeticiones",
+      "min_valor": 10,
+      "max_valor": 100,
+      "descripcion": "Número de repeticiones"
+    },
+    {
+      "nombre": "Correr",
+      "categoria": "Cardio",
+      "tipo_campo": "tiempo",
+      "min_valor": 5,
+      "max_valor": 60,
+      "descripcion": "Minutos de duración"
+    },
+    {
+      "nombre": "Peso muerto",
+      "categoria": "Espalda",
+      "tipo_campo": "peso",
+      "min_valor": 10,
+      "max_valor": 200,
+      "descripcion": "Kilos a levantar"
+    }
+  ]
+}
