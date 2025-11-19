@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 18-11-2025 a las 17:40:45
+-- Tiempo de generación: 19-11-2025 a las 16:43:56
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -97,11 +97,15 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `email`, `password`, `nombre`, `apellidos`, `id_rol`) VALUES
-(1, 'juliaestevez@almacen.com', '', 'Julia', 'Estevez Sanmartin', 1),
-(2, 'pablosanchez@almacen.com', '', 'Pablo', 'Sanchez Diaz', 2),
-(3, 'mariagonzalez@almacen.com', '', 'Maria', 'Gonzalez Martin', 2),
-(4, 'albertoandrades@almacen.com', '', 'Alberto', 'Andrades Gutierrez', 3),
-(5, 'rosarioflores@almacen.com', '', 'Rosario', 'Flores Gonzalez', 3);
+(6, 'juliaestevez@almacen.com', '$2y$10$eIMI1.s2d.3d/4f5g6h7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2', 'Julia', 'Estevez Sanmartin', 1),
+(7, 'pedrogomez@almacen.com', '$2y$10$eIMI1.s2d.3d/4f5g6h7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2', 'Pedro', 'Gomez Perez', 2),
+(8, 'marinacuenca@almacen.com', '$2y$10$eIMI1.s2d.3d/4f5g6h7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2', 'Marina', 'Cuenca Sales', 2),
+(9, 'lolaflores@almacen.com', '$2y$10$eIMI1.s2d.3d/4f5g6h7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2', 'Lola', 'Flores Ruiz', 3),
+(10, 'carlosromero@almacen.com', '$2y$10$eIMI1.s2d.3d/4f5g6h7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2', 'Carlos', 'Romero Tomillo', 3),
+(11, 'test509@almacen.com', '$2y$10$9EPctBB2VuOyRU0tltbfoOQYNfPxs.lfRUmDtjtLYsreRiQl6OuJK', 'UsuarioTest_36', 'ApellidoTest', 3),
+(12, 'juanmartin@almacen.com', '$2y$10$ycAyNRQ96bHoDHb/4S5r5eJGjgKlqXrRyL9Jp0RPiFY3OTHI9i1u6', 'juan', 'martin perez', 3),
+(13, 'juanjopinoypilon@almacen.com', '$2y$10$mKxgHN5OlHux3dgADG9SM.WisMAxAfxZfAdHPQVp4K0aOJTzwIPSi', 'Juan José', 'Rodríguez Marín', 3),
+(14, 'prueba1@almacen.com', '$2y$10$.KAc/GmFJiBU3BBDBNa4ueJyBuscnFRo/LhzX05kjhviPBihKK1z6', 'prueba', 'prueba1', 3);
 
 --
 -- Índices para tablas volcadas
@@ -141,6 +145,18 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `logs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `producto`
+--
+ALTER TABLE `producto`
+  MODIFY `sku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restricciones para tablas volcadas
