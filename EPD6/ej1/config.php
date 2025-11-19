@@ -4,5 +4,4 @@
     if(!$con){
         die('No se pudo conectar: ' . mysqli_error());
     }
-    mysqli_close($con);
 ?>
