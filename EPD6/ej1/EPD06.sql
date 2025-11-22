@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 19-11-2025 a las 16:43:56
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 22-11-2025 a las 16:27:05
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `EPD06`
+-- Base de datos: `epd06`
 --
 
 -- --------------------------------------------------------
@@ -29,8 +29,35 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `logs` (
   `id` int(11) NOT NULL,
-  `descripcion` text NOT NULL
+  `id_usuario` int(11) NOT NULL,
+  `tipo_accion` varchar(50) NOT NULL,
+  `entidad` varchar(255) NOT NULL,
+  `fecha` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `logs`
+--
+
+INSERT INTO `logs` (`id`, `id_usuario`, `tipo_accion`, `entidad`, `fecha`) VALUES
+(1, 15, 'LEER', 'lista usuarios', '2025-11-22 15:24:18'),
+(2, 15, 'CREAR', 'usuario admin@almacen.com', '2025-11-22 15:29:22'),
+(3, 15, 'LEER', 'lista usuarios', '2025-11-22 15:29:22'),
+(4, 15, 'LEER', 'lista usuarios', '2025-11-22 15:30:24'),
+(5, 15, 'BORRAR', 'usuario 16', '2025-11-22 15:30:33'),
+(6, 15, 'LEER', 'lista usuarios', '2025-11-22 15:30:33'),
+(7, 15, 'CREAR', 'usuario adminprincipal@almacen.com', '2025-11-22 15:31:53'),
+(8, 15, 'BORRAR', 'usuario 16', '2025-11-22 15:31:53'),
+(9, 15, 'LEER', 'lista usuarios', '2025-11-22 15:31:53'),
+(10, 15, 'CREAR', 'usuario pedroadministrativo@almacen.com', '2025-11-22 15:32:34'),
+(11, 15, 'BORRAR', 'usuario 16', '2025-11-22 15:32:34'),
+(12, 15, 'LEER', 'lista usuarios', '2025-11-22 15:32:34'),
+(13, 15, 'LEER', 'lista usuarios', '2025-11-22 15:32:42'),
+(14, 15, 'ACTUALIZAR', 'usuario 18', '2025-11-22 15:32:45'),
+(15, 15, 'LEER', 'lista usuarios', '2025-11-22 15:32:45'),
+(16, 15, 'CREAR', 'usuario juanoperario@almacen.com', '2025-11-22 15:33:11'),
+(17, 15, 'LEER', 'lista usuarios', '2025-11-22 15:33:11'),
+(18, 17, 'LEER', 'lista usuarios', '2025-11-22 15:34:57');
 
 -- --------------------------------------------------------
 
@@ -105,7 +132,11 @@ INSERT INTO `usuario` (`id_usuario`, `email`, `password`, `nombre`, `apellidos`,
 (11, 'test509@almacen.com', '$2y$10$9EPctBB2VuOyRU0tltbfoOQYNfPxs.lfRUmDtjtLYsreRiQl6OuJK', 'UsuarioTest_36', 'ApellidoTest', 3),
 (12, 'juanmartin@almacen.com', '$2y$10$ycAyNRQ96bHoDHb/4S5r5eJGjgKlqXrRyL9Jp0RPiFY3OTHI9i1u6', 'juan', 'martin perez', 3),
 (13, 'juanjopinoypilon@almacen.com', '$2y$10$mKxgHN5OlHux3dgADG9SM.WisMAxAfxZfAdHPQVp4K0aOJTzwIPSi', 'Juan José', 'Rodríguez Marín', 3),
-(14, 'prueba1@almacen.com', '$2y$10$.KAc/GmFJiBU3BBDBNa4ueJyBuscnFRo/LhzX05kjhviPBihKK1z6', 'prueba', 'prueba1', 3);
+(14, 'prueba1@almacen.com', '$2y$10$.KAc/GmFJiBU3BBDBNa4ueJyBuscnFRo/LhzX05kjhviPBihKK1z6', 'prueba', 'prueba1', 3),
+(15, 'admin@almacen.com', '$2y$10$FQtuvs1R1LcYGeL6bbCH9ephVj/aoiCzIxbye0GgZRtErqBGS5yBq', 'Admin', 'Admin', 1),
+(17, 'adminprincipal@almacen.com', '$2y$10$6Y1WpcCkSgaqZ7PE5mUXu.JGBWR5PeVXnt1uP3UPoZs2JGMj70DHC', 'Admin', 'Principal', 1),
+(18, 'pedroadministrativo@almacen.com', '$2y$10$.sHEQXru5Vdth5hkhz2EVe2N5RMDS0MwHyCv16yYUOCW6sJzjW3de', 'Pedro', 'Administrativo', 2),
+(19, 'juanoperario@almacen.com', '$2y$10$5.t6y1wiae3AA7bUAaglQ.n508I1u/pamNqe1HI3VLJ.z4id5X076', 'Juan', 'Operario', 3);
 
 --
 -- Índices para tablas volcadas
@@ -115,7 +146,8 @@ INSERT INTO `usuario` (`id_usuario`, `email`, `password`, `nombre`, `apellidos`,
 -- Indices de la tabla `logs`
 --
 ALTER TABLE `logs`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `producto`
@@ -144,7 +176,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
@@ -156,11 +188,17 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `logs`
+--
+ALTER TABLE `logs`
+  ADD CONSTRAINT `logs_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
 
 --
 -- Filtros para la tabla `usuario`
