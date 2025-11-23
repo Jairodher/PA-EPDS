@@ -1,0 +1,9 @@
+PÁGINAS ADICIONALES:
+
+1. auth.php: Archivo encargado del proceso de autenticación de usuarios.
+
+2. log.php: Página responsable de registrar acciones relevantes del sistema.
+
+3. logs.php: Página destinada a mostrar los registros almacenados.
+
+4. permisos.php: Archivo encargado de gestionar los permisos de los usuarios según su rol.

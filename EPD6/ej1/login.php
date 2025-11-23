@@ -35,11 +35,18 @@ if (isset($_POST['login'])) {
             // Verificar contraseña
             if (password_verify($password, $row['password'])) {
 
+                // Crear sesión segura regeneraando id de sesión
+                session_regenerate_id(true);
+
                 // Crear sesión
                 $_SESSION['id_usuario'] = $row['id_usuario'];
                 $_SESSION['nombre'] = $row['nombre'];
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['rol'] = $row['id_rol']; // admin, operario, etc.
+
+                // Crear cookie con nombre de usuario (1 día)
+                $secure = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
+                setcookie('almacen_user', $row['nombre'], time() + 86400, '/', $_SERVER['HTTP_HOST'], $secure, true);
 
                 header("Location: index.php");
                 exit();
@@ -63,14 +70,14 @@ if (isset($_POST['login'])) {
 <?php
 if (!empty($errores)) {
     echo '<div style="color:red"><ul>';
-    foreach ($errores as $e) echo "<li>$e</li>";
+    foreach ($errores as $e) echo "<li>" . htmlspecialchars($e, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "</li>";
     echo '</ul></div>';
 }
 ?>
 
 <form method="POST" action="login.php">
 
-    Email: <input type="text" name="email"><br><br>
+    Email: <input type="text" name="email" value="<?= isset($email) ? htmlspecialchars($email, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') : '' ?>"><br><br>
 
     Contraseña: <input type="password" name="password"><br><br>
 

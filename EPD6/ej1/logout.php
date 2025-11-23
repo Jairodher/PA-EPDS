@@ -14,6 +14,9 @@ if (ini_get("session.use_cookies")) {
         $params["httponly"]
     );
 }
+// Borrar cookie personalizada del nombre de usuario
+setcookie('almacen_user', '', time() - 3600, '/');
+
 header("Location: login.php");
 exit();
 ?>
