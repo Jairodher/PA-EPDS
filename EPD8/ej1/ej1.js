@@ -5,7 +5,11 @@ if (numScores <= 0 || isNaN(numScores)) {
     document.write("ERROR: Número de puntuaciones inválido.");
 } else {
     document.write("<h1>Estadisticas y puntuaciones</h1>");
-    var scores = [];
+    var puntuaciones = [];
+    var excelentes = [];
+    var buenos = [];
+    var regulares = [];
+    var deficientes = [];
     var puntuacion;
     var sumatorio = 0;
 
@@ -21,36 +25,55 @@ if (numScores <= 0 || isNaN(numScores)) {
 
         switch (true) {
             case (puntuacion > 8):
-                document.write("Puntuación "+ (i+1) + ": "+ puntuacion + " : Nivel: Excelente");
+                document.write("Puntuación " + (i + 1) + ": " + puntuacion + " : Nivel: Excelente");
+                excelentes.push(puntuacion);
                 break;
             case (puntuacion > 6 && puntuacion <= 8):
-                document.write("Puntuación "+ (i+1) + ": " + puntuacion + " : Nivel: Bueno");
+                document.write("Puntuación " + (i + 1) + ": " + puntuacion + " : Nivel: Bueno");
+                buenos.push(puntuacion);
                 break;
             case (puntuacion > 4 && puntuacion <= 6):
-                document.write("Puntuación " + (i+1) + ": "+ puntuacion + " : Nivel : Regular");
+                document.write("Puntuación " + (i + 1) + ": " + puntuacion + " : Nivel : Regular");
+                regulares.push(puntuacion);
                 break;
             case (puntuacion <= 4):
-                document.write("Puntuación "+ (i+1) + ": " + puntuacion + " : Nivel : Deficiente");
+                document.write("Puntuación " + (i + 1) + ": " + puntuacion + " : Nivel : Deficiente");
+                deficientes.push(puntuacion);
                 break;
             default:
-                document.write("Puntuación "+ (i+1) + ": " + puntuacion + " : Nivel : Inválida");
+                document.write("Puntuación " + (i + 1) + ": " + puntuacion + " : Nivel : Inválida");
                 break;
         }
 
-        scores.push(puntuacion);
+        puntuaciones.push(puntuacion);
         sumatorio += puntuacion;
         document.write("<br>");
     }
 
     // Cálculo de estadísticas
-    var min = Math.min(...scores);
-    var max = Math.max(...scores);
+    var min = Math.min(...puntuaciones);
+    var max = Math.max(...puntuaciones);
     var media = sumatorio / numScores;
 
     document.write("<h2>Estadisticas</h2>");
     document.write("Puntuación Máxima: " + max + "<br>");
-    document.write("Puntuación Mínima: " + min + "<br>" );
+    document.write("Puntuación Mínima: " + min + "<br>");
     document.write("Puntuación Media: " + media.toFixed(2) + "<br>");
+
+    //Distribucion de niveles
+    var porcentaje = (puntuaciones, num) => (puntuaciones.length / num) * 100;
+
+    document.write("<h2>Distribucion de niveles</h2>");
+    document.write("- Excelente: " + excelentes.length + " socios" + "(" + porcentaje(excelentes, numScores).toFixed(2) + "%)<br>");
+    document.write("- Bueno: " + buenos.length + " socios" + "(" + porcentaje(buenos, numScores).toFixed(2) + "%)<br>");
+    document.write("- Regular: " + regulares.length + " socios" + "(" + porcentaje(regulares, numScores).toFixed(2) + "%)<br>");
+    document.write("- Deficiente: " + deficientes.length + " socios" + "(" + porcentaje(deficientes, numScores).toFixed(2) + "%)<br>");
+    
+    document.write("<br>");
+    
+    //Ordenacion del vector
+    document.write("Puntuaciones ordenadas de menor a mayor: " + puntuaciones.sort() + "<br>");
+    document.write("Puntuaciones ordenadas de mayor a menor: " + puntuaciones.reverse());
 }
 
 
