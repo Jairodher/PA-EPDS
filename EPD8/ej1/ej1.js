@@ -1,5 +1,5 @@
 // Lectura de las puntuaciones
-var numScores = parseInt(prompt("¿Cuántas puntuaciones desea introducir?"));
+const numScores = parseInt(prompt("¿Cuántas puntuaciones desea introducir?"));
 
 if (numScores <= 0 || isNaN(numScores)) {
     document.write("ERROR: Número de puntuaciones inválido.");
