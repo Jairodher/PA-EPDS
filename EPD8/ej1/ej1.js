@@ -19,7 +19,7 @@ if (numScores <= 0 || isNaN(numScores)) {
         puntuacion = parseFloat(input);
 
         if (isNaN(puntuacion)) {
-            document.write("ERROR:Entrada no válida, se contará como 0.<br>");
+            document.write("ERROR: Entrada no válida, se contará como 0.<br>");
             puntuacion = 0;
         }
 
