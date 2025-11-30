@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Actividades del Gimnasio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .menu button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .actividad {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gestión de Actividades del Gimnasio</h1>
+
+    <div class="menu">
+        <button onclick="mostrarSeccion('mostrar')">Mostrar actividades</button>
+        <button onclick="mostrarSeccion('reservar')">Reservar plaza</button>
+        <button onclick="mostrarSeccion('liberar')">Liberar plaza</button>
+        <button onclick="mostrarSeccion('agregar')">Agregar actividad</button>
+    </div>
+
+    <hr>
+
+    <!-- SECCIÓN MOSTRAR -->
+    <div id="seccionMostrar" style="display:none;">
+        <h2>Actividades Disponibles</h2>
+        <div id="listaActividades"></div>
+    </div>
+
+    <!-- SECCIÓN RESERVAR -->
+    <div id="seccionReservar" style="display:none;">
+        <h2>Reservar Plaza</h2>
+        <input id="nombreReservar" placeholder="Nombre de la actividad">
+        <button onclick="accionReservar()">Reservar</button>
+        <p id="resultadoReservar"></p>
+    </div>
+
+    <!-- SECCIÓN LIBERAR -->
+    <div id="seccionLiberar" style="display:none;">
+        <h2>Liberar Plaza</h2>
+        <input id="nombreLiberar" placeholder="Nombre de la actividad">
+        <button onclick="accionLiberar()">Liberar</button>
+        <p id="resultadoLiberar"></p>
+    </div>
+
+    <!-- SECCIÓN AGREGAR -->
+    <div id="seccionAgregar" style="display:none;">
+        <h2>Agregar Actividad</h2>
+        <input id="nuevoNombre" placeholder="Nombre"><br><br>
+        <input id="nuevoInstructor" placeholder="Instructor"><br><br>
+        <input id="nuevasPlazas" type="number" placeholder="Plazas disponibles"><br><br>
+        <button onclick="accionAgregar()">Agregar</button>
+        <p id="resultadoAgregar"></p>
+    </div>
+
+    <!-- Archivos JS -->
+    <script src="pagina1.js"></script>
+    <script src="pagina2.js"></script>
+    <script src="pagina3.js"></script>
+
+</body>
+</html>
