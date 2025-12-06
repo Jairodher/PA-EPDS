@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia EPD09</title>
+    <script src="trivia.js" defer></script>
+</head>
+<body>
+
+    <div id="inicio">
+        <h1>Trivia Universitaria</h1>
+        <p>Responde 5 preguntas. Tienes 30 segundos por cada una.</p>
+        <button id="btnStart">Iniciar Juego</button>
+    </div>
+
+    <div id="juego" style="display: none;">
+        <progress id="barra-progreso" value="1" max="5"></progress>
+        
+        <div class="info-bar">
+            <span>Pregunta: <span id="num-pregunta">1/5</span></span>
+            <span>Tiempo: <span id="tiempo">30</span>s</span>
+            <span>Puntos: <span id="puntos">0</span></span>
+        </div>
+
+        <h2 id="categoria">Categoría</h2>
+        <p id="pregunta">Pregunta</p>
+
+        <button class="btn-opcion" id="btn0"></button>
+        <button class="btn-opcion" id="btn1"></button>
+        <button class="btn-opcion" id="btn2"></button>
+        <button class="btn-opcion" id="btn3">O</button>
+        
+        <p id="mensaje"></p>
+    </div>
+
+    <div id="final" style="display: none;">
+        <h1>Juego Terminado</h1>
+        <p>Puntuación Final: <span id="puntosFinal">0</span></p>
+        <button id="btnRestart">Jugar de Nuevo</button>
+    </div>
+
+</body>
+</html>
