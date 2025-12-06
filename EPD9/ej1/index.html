@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Epd9ej1.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Reservar plaza - Gimnasio virtual</h1>
+        </header>
+        <div>
+            <p>Puntuacion = <span id="puntuacion">0</span>/100<p>
+            <p>Barra de progreso</p>
+            <progress value="0" max ="100" id="barraProgreso"></progress>
+        </div>
+        <form method="POST" action="#" id="formulario">
+            <label for="nombre">Nombre del socio:</label>
+            <input name="nombre" id="nombre" type="text" required><br>
+            <label for="correo">Email:</label>
+            <input name="correo" id="correo" type="email"><br>
+            <label for="tlf">N&uacute;mero de telefono:</label>
+            <input name="tlf" id="tlf" type="number"><br>
+            <label for="clases">Clases disponibles:</label>
+            <select id="clases">
+                <option value="spining">Spining</option>
+                <option value="yoga">Yoga</option>
+                <option value="pilates">Pilates</option>
+                <option value="zumba">Zumba</option> 
+                <option value="crossfit">Crossfit</option>
+            </select><br><br>
+
+            <div id="Horarios">
+                <label>Horarios disponibles</label><br>
+                <label for="mañana">9:00-12:00</label>
+                <input type="radio" id="mañana" name="horario" value="mañana"><br>
+                <label for="tarde">16:00-19:00</label>
+                <input type="radio" id="tarde" name="horario" value="tarde"><br>
+                <label for="noche">20:00-22:00</label>    
+                <input type="radio" id="noche" name="horario" value="noche"><br>
+            </div>
+
+            <input type="submit" id="enviar" value="Reservar plaza" disabled>
+        </form>
+    </body>
+</html>
