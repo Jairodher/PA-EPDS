@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Cuadrado Mágico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #contenedor-juego {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+        }
+
+        /* Estilo de la tabla 3x3 */
+        #cuadrado-magico {
+            border-collapse: collapse;
+            margin: 20px 0;
+            user-select: none;
+        }
+
+        #cuadrado-magico td {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #ccc;
+            text-align: center;
+            font-size: 2em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            vertical-align: middle;
+        }
+        
+        .celda-activa {
+            background-color: #b3e5fc !important;
+            border: 3px solid #03a9f4 !important;
+        }
+
+        
+        .celda-vacia {
+            border: 2px dashed red !important;
+        }
+
+        
+        .celda-magica {
+            background-color: #ffc107 !important;
+            border: 3px solid #ff9800 !important;
+        }
+
+        
+        #mensajes {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+            min-height: 40px;
+            box-sizing: border-box;
+        }
+
+        .aviso-error {
+            background-color: #ffcdd2;
+            color: #c62828;
+            border: 1px solid #c62828;
+            font-weight: bold;
+        }
+        
+        .aviso-victoria {
+            background-color: #dcedc8;
+            color: #33691e;
+            font-weight: bold;
+        }
+
+        #cronometro, #celdas-restantes, #suma-objetivo {
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        #cronometro { color: #f44336; }
+        #suma-objetivo { color: #4caf50; }
+        
+        .info-panel {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor-juego">
+        <h1> Cuadrado Mágico 3x3</h1>
+
+        <div class="info-panel">
+            <p id="cronometro">Tiempo: 0s</p>
+            <p id="celdas-restantes">Celdas restantes: 9</p>
+        </div>
+        <p id="suma-objetivo">Suma Objetivo: 15</p>
+
+        <table id="cuadrado-magico">
+            <tr><td id="c-0-0"></td><td id="c-0-1"></td><td id="c-0-2"></td></tr>
+            <tr><td id="c-1-0"></td><td id="c-1-1"></td><td id="c-1-2"></td></tr>
+            <tr><td id="c-2-0"></td><td id="c-2-1"></td><td id="c-2-2"></td></tr>
+        </table>
+
+        <div id="mensajes"></div>
+        <button onclick="reiniciarJuego()">Nueva Partida</button>
+    </div>
+
+    <script type="text/javascript" src="ej3.js"></script>
+</body>
+</html>
