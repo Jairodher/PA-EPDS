@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivina el Número con Efectos jQuery</title>
+    <style>
+        .exito { 
+            color: green; 
+            border: 2px solid green; 
+            background-color: #d4edda; 
+            padding: 10px;
+        }
+        .fallo { 
+            color: red; 
+            border: 2px solid red; 
+            background-color: #f8d7da; 
+            padding: 10px;
+        }
+        .pista { 
+            color: #004085; 
+            border: 2px solid #b8daff; 
+            background-color: #cce5ff; 
+            padding: 10px;
+        }
+        #resultado { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Juego de Adivina el N&uacute;mero</h1>
+    
+    <label for="suposicion">Ingresa tu suposici&oacute;n:</label>
+    <br>
+    
+    <input type="number" id="suposicion" required>
+    <br><br>
+    
+    <button id="enviarSuposicion">Enviar Suposición</button>
+    
+    <button id="reiniciarJuego">Reiniciar Juego</button>
+    
+    <p id="resultado"></p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
