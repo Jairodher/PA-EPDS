@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ej3 - Lazy Load con jQuery</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Plugin LazyLoad -->
+    <script src="lazyload.js"></script>
+
+    <!-- Script propio -->
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 40px;
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 3 - Lazy Load con jQuery</h1>
+
+    <!-- Imágenes con Lazy Load (SIN src) -->
+    <img class="lazy" data-original="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Imagen 1">
+    <img class="lazy" data-original="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Imagen 2">
+    <img class="lazy" data-original="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Imagen 3">
+    <img class="lazy" data-original="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Imagen 4">
+    <img class="lazy" data-original="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Imagen 5">
+
+</body>
+</html>
